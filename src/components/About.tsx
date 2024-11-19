@@ -4,26 +4,27 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import { getImagePath } from '@/utils/paths';
 
 const images = [
   {
-    src: '/images/about/baking-1.jpg',
+    src: getImagePath('/images/about/baking-1.jpg'),
     alt: 'Kneading fresh dough with flour dusted hands'
   },
   {
-    src: '/images/about/baking-2.jpg',
+    src: getImagePath('/images/about/baking-2.jpg'),
     alt: 'Rolling out pie crust on a marble surface'
   },
   {
-    src: '/images/about/baking-3.jpg',
+    src: getImagePath('/images/about/baking-3.jpg'),
     alt: 'Piping delicate cream decorations'
   },
   {
-    src: '/images/about/baking-4.jpg',
+    src: getImagePath('/images/about/baking-4.jpg'),
     alt: 'Mixing ingredients in a vintage bowl'
   },
   {
-    src: '/images/about/baking-5.jpg',
+    src: getImagePath('/images/about/baking-5.jpg'),
     alt: 'Adding final decorative touches to a cake'
   }
 ];

@@ -3,48 +3,49 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/utils/paths';
 
 const timelineEvents = [
   {
     year: '2018',
     title: 'Where It All Began',
     description: 'Started as a small home kitchen blog, sharing family recipes and baking adventures.',
-    image: '/images/about/beginning.jpg',
+    image: getImagePath('/images/about/beginning.jpg'),
     stats: { recipes: '10', followers: '100' }
   },
   {
     year: '2019',
     title: 'Growing Community',
     description: 'Our community grew as more home bakers discovered our detailed recipes and helpful tips.',
-    image: '/images/about/community.jpg',
+    image: getImagePath('/images/about/community.jpg'),
     stats: { recipes: '50', followers: '5K' }
   },
   {
     year: '2020',
     title: 'Virtual Baking Classes',
     description: 'Launched online baking workshops during lockdown, connecting bakers worldwide.',
-    image: '/images/about/virtual-class.jpg',
+    image: getImagePath('/images/about/virtual-class.jpg'),
     stats: { recipes: '150', followers: '25K' }
   },
   {
     year: '2021',
     title: 'Recipe Testing Lab',
     description: 'Established our dedicated recipe testing kitchen to ensure perfect results every time.',
-    image: '/images/about/testing-lab.jpg',
+    image: getImagePath('/images/about/testing-lab.jpg'),
     stats: { recipes: '300', followers: '100K' }
   },
   {
     year: '2022',
     title: 'Going Global',
     description: 'Expanded our recipe collection to include international desserts and techniques.',
-    image: '/images/about/global.jpg',
+    image: getImagePath('/images/about/global.jpg'),
     stats: { recipes: '500', followers: '250K' }
   },
   {
     year: '2023',
     title: 'Sweet Success',
     description: 'Celebrating our growing community and launching exciting new features.',
-    image: '/images/about/celebration.jpg',
+    image: getImagePath('/images/about/celebration.jpg'),
     stats: { recipes: '1000+', followers: '500K+' }
   }
 ];
@@ -61,7 +62,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center">
         <Image
-          src="/images/about/hero-about.jpg"
+          src={getImagePath('/images/about/hero-about.jpg')}
           alt="Sweetest Menu Journey"
           fill
           className="object-cover brightness-50"

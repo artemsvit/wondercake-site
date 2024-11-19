@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getImagePath } from '@/utils/paths';
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
       {/* Hero Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/hero-2.jpg"
+          src={getImagePath('/images/hero/hero-2.jpg')}
           alt="Elegant dark chocolate cake"
           fill
           className="object-cover"
