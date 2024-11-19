@@ -2,6 +2,7 @@ import { getDessertBySlug } from '@/services/dessertService';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { recipes } from '@/data/recipes';
+import { getImagePath } from '@/utils/paths';
 
 export default async function RecipePage({ params }: { params: { slug: string } }) {
   const recipe = await getDessertBySlug(params.slug);
@@ -16,10 +17,10 @@ export default async function RecipePage({ params }: { params: { slug: string } 
         <h1 className="text-4xl font-serif mb-4">{recipe.title}</h1>
         <p className="text-gray-600 mb-4">{recipe.description}</p>
 
-        <div className="relative w-full h-[400px] rounded-lg overflow-hidden mb-8">
+        <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden">
           <Image
-            src={recipe.imageUrl}
-            alt={recipe.altText}
+            src={getImagePath(recipe.imageUrl)}
+            alt={recipe.altText || recipe.title}
             fill
             className="object-cover"
             priority

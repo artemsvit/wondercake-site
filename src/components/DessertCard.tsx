@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Dessert } from '@/data/types';
 import { useState } from 'react';
+import { getImagePath } from '@/utils/paths';
 
 type DessertCardProps = {
   title: string;
@@ -37,7 +38,7 @@ export default function DessertCard({ title, category, imageUrl, altText, descri
 
           {/* Image */}
           <Image
-            src={imageError ? '/images/placeholder.jpg' : imageUrl}
+            src={imageError ? getImagePath('/images/placeholder.jpg') : getImagePath(imageUrl)}
             alt={altText}
             fill
             className={`object-cover transition-all duration-300 ${
