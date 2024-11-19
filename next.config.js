@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/wondercake-site',
+  basePath: process.env.NODE_ENV === 'production' ? '/wondercake-site' : '',
   devIndicators: {
     buildActivityPosition: 'bottom-right',
     buildActivity: true,

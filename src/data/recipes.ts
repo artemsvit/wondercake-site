@@ -3,7 +3,7 @@ import { Dessert } from './types';
 export const recipes: Dessert[] = [
   {
     id: 1,
-    name: 'Classic Chocolate Cake',
+    title: 'Classic Chocolate Cake',
     slug: 'classic-chocolate-cake',
     category: 'Cakes',
     description: 'A rich, moist three-layer chocolate cake with decadent chocolate ganache frosting. This classic dessert is perfect for any celebration or when you\'re craving something deeply chocolatey.',
@@ -11,7 +11,8 @@ export const recipes: Dessert[] = [
     cookTime: '30 mins',
     servings: 12,
     difficulty: 'Medium',
-    image: '/images/chocolate-cake.jpg',
+    imageUrl: '/images/chocolate-cake.jpg',
+    altText: 'Three-layer chocolate cake with rich chocolate ganache frosting',
     ingredients: [
       '2½ cups all-purpose flour',
       '2 cups granulated sugar',
@@ -29,28 +30,19 @@ export const recipes: Dessert[] = [
       'Mix dry ingredients: flour, sugar, cocoa, baking soda, and salt.',
       'Add wet ingredients: oil, eggs, buttermilk, and vanilla. Mix well.',
       'Stir in hot coffee until combined.',
-      'Divide batter between pans and bake for 25-30 minutes.',
-      'Cool completely before frosting with ganache.'
+      'Pour batter evenly into prepared pans.',
+      'Bake for 30-35 minutes.',
+      'Cool completely before frosting.'
     ],
     tips: [
-      'Use hot coffee to enhance the chocolate flavor',
+      'Room temperature ingredients work best',
       'Don\'t overmix the batter',
-      'Let layers cool completely before frosting'
-    ],
-    nutritionalInfo: {
-      calories: 450,
-      protein: 6,
-      carbohydrates: 65,
-      fat: 22,
-      sugar: 45
-    },
-    tags: ['chocolate', 'cake', 'celebration', 'classic'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+      'Use strong coffee for enhanced chocolate flavor'
+    ]
   },
   {
     id: 2,
-    name: 'Vanilla Bean Cheesecake',
+    title: 'Vanilla Bean Cheesecake',
     slug: 'vanilla-bean-cheesecake',
     category: 'Cheesecakes',
     description: 'A creamy, rich vanilla bean cheesecake with a buttery graham cracker crust and fresh berry compote. This classic dessert is elevated with real vanilla beans and a smooth, crack-free top.',
@@ -58,7 +50,8 @@ export const recipes: Dessert[] = [
     cookTime: '1 hour',
     servings: 12,
     difficulty: 'Medium',
-    image: '/images/vanilla-cheesecake.jpg',
+    imageUrl: '/images/vanilla-cheesecake.jpg',
+    altText: 'Vanilla bean cheesecake with graham cracker crust and berry compote',
     ingredients: [
       '2 cups graham cracker crumbs',
       '½ cup melted butter',
@@ -82,21 +75,11 @@ export const recipes: Dessert[] = [
       'Use room temperature ingredients',
       'Don\'t overmix after adding eggs',
       'Always use a water bath to prevent cracks'
-    ],
-    nutritionalInfo: {
-      calories: 380,
-      protein: 6,
-      carbohydrates: 28,
-      fat: 28,
-      sugar: 22
-    },
-    tags: ['cheesecake', 'vanilla', 'classic', 'creamy'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 3,
-    name: 'Salted Caramel Brownies',
+    title: 'Salted Caramel Brownies',
     slug: 'salted-caramel-brownies',
     category: 'Brownies',
     description: 'Fudgy chocolate brownies swirled with homemade salted caramel and sprinkled with flaky sea salt. These decadent treats combine rich chocolate with the perfect sweet-salty balance.',
@@ -104,7 +87,8 @@ export const recipes: Dessert[] = [
     cookTime: '35 mins',
     servings: 16,
     difficulty: 'Medium',
-    image: '/images/salted-caramel-brownies.jpg',
+    imageUrl: '/images/salted-caramel-brownies.jpg',
+    altText: 'Fudgy brownies with salted caramel and flaky sea salt',
     ingredients: [
       '2 cups dark chocolate chips',
       '1 cup unsalted butter',
@@ -128,21 +112,11 @@ export const recipes: Dessert[] = [
       'Use high-quality chocolate for best results',
       'Don\'t overbake - brownies should be fudgy',
       'Warm the caramel slightly for easier swirling'
-    ],
-    nutritionalInfo: {
-      calories: 320,
-      protein: 4,
-      carbohydrates: 38,
-      fat: 18,
-      sugar: 28
-    },
-    tags: ['brownies', 'chocolate', 'caramel', 'salty-sweet'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 4,
-    name: 'Lemon Meringue Pie',
+    title: 'Lemon Meringue Pie',
     slug: 'lemon-meringue-pie',
     category: 'Pies',
     description: 'A classic pie featuring a buttery crust filled with tangy lemon curd and topped with billowy toasted meringue. The perfect balance of sweet and tart flavors.',
@@ -150,7 +124,8 @@ export const recipes: Dessert[] = [
     cookTime: '45 mins',
     servings: 8,
     difficulty: 'Hard',
-    image: '/images/lemon-meringue.jpg',
+    imageUrl: '/images/lemon-meringue.jpg',
+    altText: 'Lemon meringue pie with buttery crust and toasted meringue',
     ingredients: [
       '1 pre-baked pie crust',
       '6 large eggs, separated',
@@ -173,21 +148,11 @@ export const recipes: Dessert[] = [
       'Use fresh lemons for best flavor',
       'Make sure curd is hot when adding meringue',
       'Cool completely before slicing'
-    ],
-    nutritionalInfo: {
-      calories: 380,
-      protein: 6,
-      carbohydrates: 58,
-      fat: 14,
-      sugar: 42
-    },
-    tags: ['pie', 'lemon', 'meringue', 'classic'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 5,
-    name: 'Red Velvet Cupcakes',
+    title: 'Red Velvet Cupcakes',
     slug: 'red-velvet-cupcakes',
     category: 'Cupcakes',
     description: 'Moist red velvet cupcakes topped with swirled cream cheese frosting and red velvet crumbs. These classic Southern treats are perfect for any special occasion.',
@@ -195,7 +160,8 @@ export const recipes: Dessert[] = [
     cookTime: '20 mins',
     servings: 24,
     difficulty: 'Medium',
-    image: '/images/red-velvet-cupcakes.jpg',
+    imageUrl: '/images/red-velvet-cupcakes.jpg',
+    altText: 'Red velvet cupcakes with cream cheese frosting and red velvet crumbs',
     ingredients: [
       '2½ cups all-purpose flour',
       '1½ cups sugar',
@@ -221,21 +187,11 @@ export const recipes: Dessert[] = [
       'Use gel food coloring for intense color',
       'Don\'t overmix the batter',
       'Make sure ingredients are room temperature'
-    ],
-    nutritionalInfo: {
-      calories: 280,
-      protein: 3,
-      carbohydrates: 32,
-      fat: 15,
-      sugar: 22
-    },
-    tags: ['cupcakes', 'red velvet', 'cream cheese', 'Southern'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 6,
-    name: 'Apple Cinnamon Muffins',
+    title: 'Apple Cinnamon Muffins',
     slug: 'apple-cinnamon-muffins',
     category: 'Muffins',
     description: 'Tender, spiced muffins studded with fresh apple chunks and topped with a buttery cinnamon streusel. Perfect for breakfast or as an afternoon treat.',
@@ -243,7 +199,8 @@ export const recipes: Dessert[] = [
     cookTime: '22 mins',
     servings: 12,
     difficulty: 'Easy',
-    image: '/images/apple-muffins.jpg',
+    imageUrl: '/images/apple-muffins.jpg',
+    altText: 'Apple cinnamon muffins with buttery streusel topping',
     ingredients: [
       '2 cups all-purpose flour',
       '1 cup granulated sugar',
@@ -272,21 +229,11 @@ export const recipes: Dessert[] = [
       'Use firm apples like Granny Smith or Honeycrisp',
       'Don\'t overmix the batter',
       'Cool in pan for 5 minutes before removing'
-    ],
-    nutritionalInfo: {
-      calories: 245,
-      protein: 4,
-      carbohydrates: 38,
-      fat: 9,
-      sugar: 22
-    },
-    tags: ['muffins', 'apple', 'breakfast', 'streusel'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 7,
-    name: 'Double Chocolate Cookies',
+    title: 'Double Chocolate Cookies',
     slug: 'double-chocolate-cookies',
     category: 'Cookies',
     description: 'Rich, fudgy chocolate cookies loaded with melted chocolate chunks. These decadent cookies have a brownie-like texture and intense chocolate flavor.',
@@ -294,7 +241,8 @@ export const recipes: Dessert[] = [
     cookTime: '12 mins',
     servings: 24,
     difficulty: 'Easy',
-    image: '/images/chocolate-cookies.jpg',
+    imageUrl: '/images/chocolate-cookies.jpg',
+    altText: 'Double chocolate cookies with melted chocolate chunks',
     ingredients: [
       '2¼ cups all-purpose flour',
       '½ cup cocoa powder',
@@ -319,21 +267,11 @@ export const recipes: Dessert[] = [
       'Chill dough for thicker cookies',
       'Use room temperature ingredients',
       'Don\'t overbake - cookies will set as they cool'
-    ],
-    nutritionalInfo: {
-      calories: 180,
-      protein: 2,
-      carbohydrates: 24,
-      fat: 9,
-      sugar: 16
-    },
-    tags: ['cookies', 'chocolate', 'dessert', 'easy'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 8,
-    name: 'Strawberry Shortcake',
+    title: 'Strawberry Shortcake',
     slug: 'strawberry-shortcake',
     category: 'Cakes',
     description: 'Light, fluffy vanilla sponge cake layered with fresh strawberries and whipped cream. A classic summer dessert that\'s both elegant and refreshing.',
@@ -341,7 +279,8 @@ export const recipes: Dessert[] = [
     cookTime: '25 mins',
     servings: 8,
     difficulty: 'Medium',
-    image: '/images/strawberry-shortcake.jpg',
+    imageUrl: '/images/strawberry-shortcake.jpg',
+    altText: 'Strawberry shortcake with vanilla sponge cake and whipped cream',
     ingredients: [
       '2 cups all-purpose flour',
       '2 teaspoons baking powder',
@@ -368,21 +307,11 @@ export const recipes: Dessert[] = [
       'Use room temperature ingredients',
       'Don\'t overmix the batter',
       'Assemble just before serving'
-    ],
-    nutritionalInfo: {
-      calories: 420,
-      protein: 6,
-      carbohydrates: 52,
-      fat: 22,
-      sugar: 32
-    },
-    tags: ['cake', 'strawberry', 'summer', 'whipped cream'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 9,
-    name: 'Blueberry Crumble Pie',
+    title: 'Blueberry Crumble Pie',
     slug: 'blueberry-crumble-pie',
     category: 'Pies',
     description: 'A perfect summer pie filled with juicy blueberries and topped with a buttery crumble. The combination of sweet berries and crispy topping is irresistible.',
@@ -390,7 +319,8 @@ export const recipes: Dessert[] = [
     cookTime: '50 mins',
     servings: 8,
     difficulty: 'Medium',
-    image: '/images/blueberry-crumble-pie.jpg',
+    imageUrl: '/images/blueberry-crumble-pie.jpg',
+    altText: 'Blueberry crumble pie with buttery crust and crispy topping',
     ingredients: [
       '1 pie crust',
       '6 cups fresh blueberries',
@@ -415,21 +345,11 @@ export const recipes: Dessert[] = [
       'Use fresh or frozen berries',
       'Place pie on baking sheet to catch drips',
       'Cool completely before slicing'
-    ],
-    nutritionalInfo: {
-      calories: 380,
-      protein: 4,
-      carbohydrates: 58,
-      fat: 16,
-      sugar: 32
-    },
-    tags: ['pie', 'blueberry', 'crumble', 'summer'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 10,
-    name: 'Tiramisu',
+    title: 'Tiramisu',
     slug: 'tiramisu',
     category: 'Cakes',
     description: 'Classic Italian dessert with layers of coffee-soaked ladyfingers and creamy mascarpone filling. Dusted with cocoa powder for an elegant finish.',
@@ -437,7 +357,8 @@ export const recipes: Dessert[] = [
     cookTime: '0 mins',
     servings: 12,
     difficulty: 'Medium',
-    image: '/images/tiramisu.jpg',
+    imageUrl: '/images/tiramisu.jpg',
+    altText: 'Tiramisu with coffee-soaked ladyfingers and mascarpone filling',
     ingredients: [
       '6 egg yolks',
       '1 cup granulated sugar',
@@ -461,21 +382,11 @@ export const recipes: Dessert[] = [
       'Use room temperature mascarpone',
       'Don\'t oversoak the ladyfingers',
       'Chill at least 4 hours'
-    ],
-    nutritionalInfo: {
-      calories: 420,
-      protein: 7,
-      carbohydrates: 42,
-      fat: 25,
-      sugar: 28
-    },
-    tags: ['Italian', 'coffee', 'no-bake', 'mascarpone'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 11,
-    name: 'French Croissants',
+    title: 'French Croissants',
     slug: 'french-croissants',
     category: 'Pastries',
     description: 'Flaky, buttery French croissants with perfectly laminated layers. These classic pastries are crispy on the outside and tender inside, perfect for breakfast or brunch.',
@@ -483,7 +394,8 @@ export const recipes: Dessert[] = [
     cookTime: '20 mins',
     servings: 12,
     difficulty: 'Hard',
-    image: '/images/croissants.jpg',
+    imageUrl: '/images/croissants.jpg',
+    altText: 'French croissants with flaky, buttery layers',
     ingredients: [
       '4 cups all-purpose flour',
       '1⅓ cups cold water',
@@ -507,21 +419,11 @@ export const recipes: Dessert[] = [
       'Keep ingredients and dough cold',
       'Rest dough between folds',
       'Don\'t rush the proofing process'
-    ],
-    nutritionalInfo: {
-      calories: 320,
-      protein: 5,
-      carbohydrates: 32,
-      fat: 18,
-      sugar: 8
-    },
-    tags: ['French', 'breakfast', 'butter', 'laminated'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 12,
-    name: 'Danish Pastry',
+    title: 'Danish Pastry',
     slug: 'danish-pastry',
     category: 'Pastries',
     description: 'Sweet Danish pastries filled with vanilla custard and fresh fruits, topped with a sweet glaze. These delicate pastries are perfect with coffee or tea.',
@@ -529,7 +431,8 @@ export const recipes: Dessert[] = [
     cookTime: '18 mins',
     servings: 12,
     difficulty: 'Medium',
-    image: '/images/danish-pastry.jpg',
+    imageUrl: '/images/danish-pastry.jpg',
+    altText: 'Danish pastry with vanilla custard and fresh fruits',
     ingredients: [
       '3½ cups all-purpose flour',
       '1 cup milk, lukewarm',
@@ -556,21 +459,11 @@ export const recipes: Dessert[] = [
       'Keep butter cold during lamination',
       'Don\'t overfill the pastries',
       'Best served fresh'
-    ],
-    nutritionalInfo: {
-      calories: 280,
-      protein: 4,
-      carbohydrates: 35,
-      fat: 14,
-      sugar: 18
-    },
-    tags: ['Danish', 'fruit', 'custard', 'breakfast'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 13,
-    name: 'Classic Crème Brûlée',
+    title: 'Classic Crème Brûlée',
     slug: 'creme-brulee',
     category: 'Custards',
     description: 'Silky smooth vanilla custard topped with a layer of caramelized sugar that cracks perfectly when tapped with a spoon. A classic French dessert that\'s both elegant and delicious.',
@@ -578,7 +471,8 @@ export const recipes: Dessert[] = [
     cookTime: '35 mins',
     servings: 6,
     difficulty: 'Medium',
-    image: '/images/creme-brulee.jpg',
+    imageUrl: '/images/creme-brulee.jpg',
+    altText: 'Crème brûlée with caramelized sugar and vanilla custard',
     ingredients: [
       '2 cups heavy cream',
       '1 vanilla bean, split and scraped',
@@ -599,21 +493,11 @@ export const recipes: Dessert[] = [
       'Use high-fat cream for best results',
       'Don\'t overbake - custards should slightly wobble',
       'Chill thoroughly before caramelizing'
-    ],
-    nutritionalInfo: {
-      calories: 310,
-      protein: 4,
-      carbohydrates: 18,
-      fat: 26,
-      sugar: 16
-    },
-    tags: ['French', 'vanilla', 'caramel', 'elegant'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 14,
-    name: 'Bread Pudding',
+    title: 'Bread Pudding',
     slug: 'bread-pudding',
     category: 'Custards',
     description: 'Warm, comforting bread pudding made with buttery brioche, rich custard, and hints of vanilla and cinnamon. Served with a decadent bourbon sauce.',
@@ -621,7 +505,8 @@ export const recipes: Dessert[] = [
     cookTime: '45 mins',
     servings: 8,
     difficulty: 'Easy',
-    image: '/images/bread-pudding.jpg',
+    imageUrl: '/images/bread-pudding.jpg',
+    altText: 'Bread pudding with buttery brioche and rich custard',
     ingredients: [
       '1 loaf brioche bread, cubed',
       '4 cups whole milk',
@@ -645,21 +530,11 @@ export const recipes: Dessert[] = [
       'Use stale bread for better absorption',
       'Don\'t skip the soaking time',
       'Serve warm for best taste'
-    ],
-    nutritionalInfo: {
-      calories: 380,
-      protein: 12,
-      carbohydrates: 58,
-      fat: 12,
-      sugar: 32
-    },
-    tags: ['comfort food', 'custard', 'bread', 'bourbon'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 15,
-    name: 'Dark Chocolate Truffles',
+    title: 'Dark Chocolate Truffles',
     slug: 'chocolate-truffles',
     category: 'Chocolates',
     description: 'Smooth, rich dark chocolate truffles with a velvety ganache center, dusted with cocoa powder. These elegant confections are perfect for gifting or special occasions.',
@@ -667,7 +542,8 @@ export const recipes: Dessert[] = [
     cookTime: '0 mins',
     servings: 24,
     difficulty: 'Medium',
-    image: '/images/dark-chocolate-truffles.jpg',
+    imageUrl: '/images/dark-chocolate-truffles.jpg',
+    altText: 'Dark chocolate truffles with velvety ganache center',
     ingredients: [
       '12 oz high-quality dark chocolate',
       '⅔ cup heavy cream',
@@ -688,21 +564,11 @@ export const recipes: Dessert[] = [
       'Use high-quality chocolate',
       'Chill mixture thoroughly',
       'Use gloves when rolling'
-    ],
-    nutritionalInfo: {
-      calories: 120,
-      protein: 1,
-      carbohydrates: 8,
-      fat: 9,
-      sugar: 6
-    },
-    tags: ['chocolate', 'truffles', 'no-bake', 'gifts'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 16,
-    name: 'Chocolate Bark',
+    title: 'Chocolate Bark',
     slug: 'chocolate-bark',
     category: 'Chocolates',
     description: 'Artisanal chocolate bark loaded with dried fruits, nuts, and a sprinkle of sea salt. This easy-to-make treat combines different chocolate varieties for a stunning marbled effect.',
@@ -710,7 +576,8 @@ export const recipes: Dessert[] = [
     cookTime: '0 mins',
     servings: 12,
     difficulty: 'Easy',
-    image: '/images/chocolate-bark.jpg',
+    imageUrl: '/images/chocolate-bark.jpg',
+    altText: 'Chocolate bark with dried fruits, nuts, and sea salt',
     ingredients: [
       '12 oz dark chocolate',
       '8 oz white chocolate',
@@ -732,21 +599,11 @@ export const recipes: Dessert[] = [
       'Properly temper chocolate for snap',
       'Work quickly before chocolate sets',
       'Store in cool place'
-    ],
-    nutritionalInfo: {
-      calories: 220,
-      protein: 3,
-      carbohydrates: 18,
-      fat: 16,
-      sugar: 14
-    },
-    tags: ['chocolate', 'nuts', 'no-bake', 'gifts'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   },
   {
     id: 17,
-    name: 'Chocolate-Covered Strawberries',
+    title: 'Chocolate-Covered Strawberries',
     slug: 'chocolate-covered-strawberries',
     category: 'Chocolates',
     description: 'Fresh, juicy strawberries dipped in premium chocolate and decorated with white chocolate drizzle and chopped nuts. A romantic and elegant dessert perfect for special occasions.',
@@ -754,7 +611,8 @@ export const recipes: Dessert[] = [
     cookTime: '0 mins',
     servings: 24,
     difficulty: 'Easy',
-    image: '/images/chocolate-strawberries.jpg',
+    imageUrl: '/images/chocolate-strawberries.jpg',
+    altText: 'Chocolate-covered strawberries with white chocolate drizzle and chopped nuts',
     ingredients: [
       '24 large fresh strawberries',
       '12 oz dark chocolate',
@@ -774,16 +632,6 @@ export const recipes: Dessert[] = [
       'Use room temperature strawberries',
       'Ensure berries are completely dry',
       'Store in cool place'
-    ],
-    nutritionalInfo: {
-      calories: 90,
-      protein: 1,
-      carbohydrates: 10,
-      fat: 6,
-      sugar: 8
-    },
-    tags: ['chocolate', 'fruit', 'romantic', 'no-bake'],
-    createdAt: '2024-01-15T08:00:00Z',
-    updatedAt: '2024-01-15T08:00:00Z'
+    ]
   }
 ];

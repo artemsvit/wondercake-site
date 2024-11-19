@@ -6,14 +6,15 @@ import { Dessert } from '@/data/types';
 import { useState } from 'react';
 
 type DessertCardProps = {
-  name: string;
-  category: string;
-  image: string;
-  description: string;
-  slug: string;
+  title: string;
+  category: Dessert['category'];
+  imageUrl: string;
+  altText: string;
+  description?: string;
+  slug?: string;
 }
 
-export default function DessertCard({ name, category, image, description, slug }: DessertCardProps) {
+export default function DessertCard({ title, category, imageUrl, altText, description, slug }: DessertCardProps) {
   const [imageError, setImageError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -36,8 +37,8 @@ export default function DessertCard({ name, category, image, description, slug }
 
           {/* Image */}
           <Image
-            src={imageError ? '/images/placeholder.jpg' : image}
-            alt={name}
+            src={imageError ? '/images/placeholder.jpg' : imageUrl}
+            alt={altText}
             fill
             className={`object-cover transition-all duration-300 ${
               isLoading ? 'opacity-0' : 'opacity-100'
@@ -52,17 +53,13 @@ export default function DessertCard({ name, category, image, description, slug }
           />
         </div>
 
-        <div className="flex-1">
-          <h2 className="text-xl font-serif mb-2 group-hover:text-[#0abab5] transition-colors">
-            {name}
-          </h2>
-          <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">
-            {category}
-          </p>
-          <p className="text-gray-600 line-clamp-2">
-            {description}
-          </p>
-        </div>
+        <h3 className="font-serif text-xl mb-2 group-hover:text-[#0abab5] transition-colors">
+          {title}
+        </h3>
+        <p className="text-sm text-[#0abab5] mb-2">{category}</p>
+        {description && (
+          <p className="text-gray-600 text-sm line-clamp-2">{description}</p>
+        )}
       </Link>
     </article>
   );

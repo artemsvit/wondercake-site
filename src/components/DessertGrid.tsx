@@ -55,9 +55,10 @@ export default function DessertGrid({ desserts, isLoading = false }: DessertGrid
       {desserts.map((dessert) => (
         <motion.div key={dessert.id} variants={item}>
           <DessertCard
-            name={dessert.name}
+            title={dessert.title}
             category={dessert.category}
-            image={dessert.image}
+            imageUrl={dessert.imageUrl}
+            altText={dessert.altText}
             description={dessert.description}
             slug={dessert.slug}
           />

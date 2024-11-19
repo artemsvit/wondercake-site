@@ -1,6 +1,7 @@
 import { getDessertBySlug } from '@/services/dessertService';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { recipes } from '@/data/recipes';
 
 export default async function RecipePage({ params }: { params: { slug: string } }) {
   const recipe = await getDessertBySlug(params.slug);
@@ -98,4 +99,10 @@ export default async function RecipePage({ params }: { params: { slug: string } 
       )}
     </article>
   );
+}
+
+export function generateStaticParams() {
+  return recipes.map((recipe) => ({
+    slug: recipe.slug,
+  }));
 }
