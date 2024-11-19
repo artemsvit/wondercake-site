@@ -6,7 +6,10 @@ export type DessertCategory =
   | 'Custards'
   | 'Chocolates'
   | 'Brownies'
-  | 'Cheesecakes';
+  | 'Cheesecakes'
+  | 'Cupcakes'
+  | 'Muffins'
+  | 'Tarts';
 
 export interface Dessert {
   id: number;
