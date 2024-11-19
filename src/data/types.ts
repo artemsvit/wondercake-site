@@ -10,26 +10,17 @@ export type DessertCategory =
 
 export interface Dessert {
   id: number;
-  name: string;
-  slug: string;
+  title: string;
   category: DessertCategory;
-  description: string;
-  prepTime: string;
-  cookTime: string;
-  servings: number;
-  difficulty: 'Easy' | 'Medium' | 'Hard';
-  image: string;
-  ingredients: string[];
-  instructions: string[];
+  imageUrl: string;
+  altText: string;
+  description?: string;
+  prepTime?: string;
+  cookTime?: string;
+  servings?: number;
+  difficulty?: 'Easy' | 'Medium' | 'Hard';
+  ingredients?: string[];
+  instructions?: string[];
   tips?: string[];
-  nutritionalInfo?: {
-    calories: number;
-    protein: number;
-    carbohydrates: number;
-    fat: number;
-    sugar: number;
-  };
-  tags: string[];
-  createdAt: string;
-  updatedAt: string;
+  slug?: string;
 }
